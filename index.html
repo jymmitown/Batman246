@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Entrenamiento en oratoria</title>
+<style>
+  :root{--pink:#E23873;--teal:#4BB7B9;--green:#2FA66A;--bg:#0f0f12;--card:#ffffff;--muted:#6b6b6b}
+  html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+  body{background:linear-gradient(90deg,var(--pink) 50%, var(--teal) 50%);display:flex;align-items:center;justify-content:center;padding:20px;}
+  .container{width:100%;max-width:980px;background:rgba(255,255,255,0.06);backdrop-filter: blur(6px);border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,0.35);}
+  .hero{text-align:center;margin-bottom:18px;color:#ffffff;position:relative;}
+  .logo-wrap{display:flex;justify-content:center;margin-bottom:10px;}
+  h1{margin:0;font-size:28px;letter-spacing:0.4px;}
+  .subtitle{margin:6px 0 18px;color:rgba(255,255,255,0.92);}
+  .buttons{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:10px 0 18px;}
+  .btn{padding:12px 18px;border-radius:999px;border:0;cursor:pointer;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,0.25);transition:transform .12s ease, box-shadow .12s ease;}
+  .btn:active{transform:translateY(1px);}
+  .btn-primary{background:rgba(255,255,255,0.92);color:#111;} /* neutral for main buttons */
+  .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.12);}
+  .btn-green{background:var(--green);color:#fff;}
+  .notice{background:rgba(0,0,0,0.25);padding:14px;border-radius:10px;color:#fff;margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .notice p{margin:0;}
+  .help-row{display:flex;gap:8px;align-items:center;}
+  a.help-link{background:transparent;border:2px solid rgba(255,255,255,0.12);padding:8px 12px;border-radius:8px;color:#fff;text-decoration:none;font-weight:600;}
+  footer.small{margin-top:14px;text-align:center;color:rgba(255,255,255,0.75);font-size:13px;}
+  /* Responsive */
+  @media (max-width:600px){.buttons{flex-direction:column;padding:0 12px}}
+</style>
+</head>
+<body>
+  <div class="container" role="main">
+    
+<header class="hero">
+  <div class="logo-wrap" aria-hidden="true">
+    <!-- Circular badge with two chat bubbles -->
+    <svg width="260" height="260" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo">
+      <defs>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.25" />
+        </filter>
+      </defs>
+      <circle cx="130" cy="130" r="120" fill="#f2f2f2" />
+      <!-- pink bubble -->
+      <path d="M60 95 q0 -28 28 -28 h18 q6 0 6 6 v32 q0 6 -6 6 h-18 q-28 0 -28 28 v18 l-22 10 v-18 q0 -46 22 -56 z"
+            fill="#E23873" filter="url(#shadow)"/>
+      <!-- teal bubble -->
+      <path d="M200 95 q0 -28 -28 -28 h-18 q-6 0 -6 6 v32 q0 6 6 6 h18 q28 0 28 28 v18 l22 10 v-18 q0 -46 -22 -56 z"
+            fill="#4BB7B9" filter="url(#shadow)"/>
+      <!-- Letters -->
+      <text x="70" y="105" font-family="Arial" font-weight="700" font-size="46" fill="#fff">M</text>
+      <text x="168" y="105" font-family="Arial" font-weight="700" font-size="46" fill="#fff">T</text>
+    </svg>
+  </div>
+  <h1>Entrenamiento en oratoria</h1>
+  <p class="subtitle">Desarrollá presencia, voz y confianza para hablar en público.</p>
+</header>
+
+
+    <nav class="buttons" aria-label="Menú principal">
+      <a class="btn btn-primary" href="intro.html">Introducción a la oratoria</a>
+      <a class="btn btn-primary" href="pnl.html">Entrenamiento en PNL</a>
+      <a class="btn btn-primary" href="emociones.html">Las emociones y la oratoria</a>
+      <a class="btn btn-green" href="voz.html">Técnicas de voz y respiración</a>
+      <a class="btn btn-green" href="impro.html">Improvisación escénica</a>
+    </nav>
+
+    <div class="notice" role="region" aria-label="Aviso para alumnos">
+      <p><strong>Aviso para alumnos:</strong> Podés subir tareas hasta <strong>7 días</strong> después de la fecha de entrega. Consultá el cronograma en la sección de ayuda.</p>
+      <div class="help-row">
+        <a class="help-link" href="ayuda.html">Ayuda</a>
+      </div>
+    </div>
+
+    <footer class="small">¿Querés que agregue calendario de clases, formulario de contacto o seguimiento de progreso? </footer>
+  </div>
+</body>
+</html>
